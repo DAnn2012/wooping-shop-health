@@ -2,7 +2,7 @@
 
 namespace Wooping\ShopHealth\Controllers;
 
-use Illuminate\Database\Eloquent\ModelNotFoundException;
+use Shop_Maestro_Vendor\Illuminate\Database\Eloquent\ModelNotFoundException;
 use Wooping\ShopHealth\Contracts\Controller;
 use Wooping\ShopHealth\Models\Issue;
 use WP_REST_Request;

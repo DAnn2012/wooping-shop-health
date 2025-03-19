@@ -2,9 +2,9 @@
 
 namespace Wooping\ShopHealth\Contracts;
 
-use Illuminate\Database\Capsule\Manager as Capsule;
-use Illuminate\Database\Eloquent\Model as OriginalModel;
-use Illuminate\Database\Query\Builder;
+use Shop_Maestro_Vendor\Illuminate\Database\Capsule\Manager as Capsule;
+use Shop_Maestro_Vendor\Illuminate\Database\Eloquent\Model as OriginalModel;
+use Shop_Maestro_Vendor\Illuminate\Database\Query\Builder;
 
 /**
  * Class Model

@@ -2,9 +2,9 @@
 
 namespace Wooping\ShopHealth\Models\Scopes;
 
-use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Scope;
+use Shop_Maestro_Vendor\Illuminate\Database\Eloquent\Builder;
+use Shop_Maestro_Vendor\Illuminate\Database\Eloquent\Model;
+use Shop_Maestro_Vendor\Illuminate\Database\Eloquent\Scope;
 
 /**
  * Class ProductScope

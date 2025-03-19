@@ -2,7 +2,7 @@
 
 namespace Wooping\ShopHealth\Models;
 
-use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Shop_Maestro_Vendor\Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Wooping\ShopHealth\Contracts\Model;
 
 /**

@@ -3,7 +3,7 @@
 namespace Wooping\ShopHealth;
 
 use Carbon\Carbon;
-use Illuminate\Database\Capsule\Manager as Capsule;
+use Shop_Maestro_Vendor\Illuminate\Database\Capsule\Manager as Capsule;
 use Wooping\ShopHealth\Cli\Clean as CleanCommands;
 use Wooping\ShopHealth\Cli\Run as RunCommands;
 use Wooping\ShopHealth\Cli\Schedule as ScheduleCommands;

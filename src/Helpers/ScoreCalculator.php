@@ -1,7 +1,7 @@
 <?php
 namespace Wooping\ShopHealth\Helpers;
 
-use Illuminate\Support\Collection;
+use Shop_Maestro_Vendor\Illuminate\Support\Collection;
 use Wooping\ShopHealth\Models\Issue;
 use Wooping\ShopHealth\Models\ScannedObject;
 

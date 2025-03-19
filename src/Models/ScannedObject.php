@@ -3,8 +3,8 @@
 namespace Wooping\ShopHealth\Models;
 
 use Exception;
-use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\Relations\HasMany;
+use Shop_Maestro_Vendor\Illuminate\Database\Eloquent\Builder;
+use Shop_Maestro_Vendor\Illuminate\Database\Eloquent\Relations\HasMany;
 use Wooping\ShopHealth\Analysers\HTML;
 use Wooping\ShopHealth\Contracts\Model;
 use Wooping\ShopHealth\Helpers\ScoreCalculator;

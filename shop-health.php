@@ -24,6 +24,7 @@
 use Wooping\ShopHealth\Plugin;
 use Wooping\ShopHealth\Updates\Installer;
 use Wooping\ShopHealth\Updates\Uninstaller;
+use Wooping\ShopHealth\Views\Widgets\FAQ;
 
 define( 'SHOP_HEALTH_SLUG', 'wooping-shop-health' );
 define( 'SHOP_HEALTH_FILE', __FILE__ );
@@ -43,7 +44,8 @@ conductor()->plugins()->register( SHOP_HEALTH_SLUG, [
 	'path'				=> SHOP_HEALTH_PATH,
 	'version' 			=> SHOP_HEALTH_VERSION,
 	'on_activate'		=> new Installer(),
-	'on_deactivate'		=> new Uninstaller()
+	'on_deactivate'		=> new Uninstaller(),
+	'widgets'			=> [ FAQ::class ]
 ]);
 
 /**

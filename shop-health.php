@@ -31,14 +31,14 @@ define( 'SHOP_HEALTH_PATH', dirname( SHOP_HEALTH_FILE ) );
 define( 'SHOP_HEALTH_VERSION', '1.3.0' );
 define( 'SHOP_HEALTH_DOCUMENTATION_URL', 'https://wooping.io/docs/shop-health/' );
 
-if ( ! file_exists( SHOP_HEALTH_PATH . '/vendor/autoload.php' ) ) {
+if ( ! file_exists( SHOP_HEALTH_PATH . '/vendor_prefixed/autoload.php' ) ) {
 	return;
 }
 
-require SHOP_HEALTH_PATH . '/vendor/autoload.php';
+require SHOP_HEALTH_PATH . '/vendor_prefixed/autoload.php';
 
 // Init conductor and register our plugin
-conductor()->plugins()->register( SHOP_HEALTH_SLUG, [
+Shop_Maestro_Vendor\conductor()->plugins()->register( SHOP_HEALTH_SLUG, [
 	'file' 				=> SHOP_HEALTH_FILE,
 	'path'				=> SHOP_HEALTH_PATH,
 	'version' 			=> SHOP_HEALTH_VERSION,

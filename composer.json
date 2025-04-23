@@ -17,15 +17,12 @@
     },
     "files": [
       "src/functions.php"
-    ],
-    "classmap": [
-      "vendor_prefixed"
     ]
   },
   "require": {
     "php": ">=7.4",
-    "shop-maestro/conductor": "dev-main",
-    "humbug/php-scoper": "^0.17.5"
+    "shop-maestro/conductor": "dev-laravel-12",
+    "humbug/php-scoper": "^0.18.17"
   },
   "require-dev": {
     "phpstan/phpstan": "^1.10",
@@ -35,11 +32,8 @@
   },
   "repositories": [
     {
-      "type": "path",
-      "url": "~/Developer/MindBlownHQ/conductor",
-      "options": {
-          "symlink": true
-      }
+      "type": "vcs",
+      "url": "git@github.com:MindblownHQ/conductor.git"
     }
   ],
   "config": {
@@ -52,8 +46,8 @@
     "analyse": "vendor/bin/phpstan analyse src --memory-limit 1G",
     "check-cs": "vendor/bin/phpcs --config-set php_version 7040 && ./vendor/bin/phpcs src/",
     "fix-cs": "vendor/bin/phpcbf --config-set php_version 7040 && ./vendor/bin/phpcbf src/",
-    "prefix-dependencies": "@php -d pcre.jit=0 ./vendor/humbug/php-scoper/bin/php-scoper add-prefix --prefix=Shop_Maestro_Vendor --output-dir=vendor_prefixed/ --config=vendor/shop-maestro/conductor/config/php-scoper/dependency-injection.inc.php --force --quiet",
-    "post-autoload-dump": [
+    "prefix-dependencies": "@php -d pcre.jit=0 ./vendor/humbug/php-scoper/bin/php-scoper add-prefix --output-dir=vendor_prefixed/ --config=vendor/shop-maestro/conductor/config/php-scoper/dependency-injection.inc.php --force --quiet",
+    "post-install-cmd": [
       "@prefix-dependencies"
     ]
 

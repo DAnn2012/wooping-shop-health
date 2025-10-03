@@ -21,7 +21,7 @@
                         <ul class="mass-ignore-issues">
 							<li class="row">
                                 <label class="issue-description" for="ignoreHasDimensions"
-                                       title="<?php echo \esc_attr(esc_html__('Disable product dimension checks', 'wooping-shop-health')); ?>'">
+                                       title="<?php esc_attr_e('Disable product dimension checks', 'wooping-shop-health'); ?>">
                                     <strong><?php esc_html_e('Product Dimensions', 'wooping-shop-health'); ?></strong><br>
                                     <?php esc_html_e('Checks whether or not your products have a height, width and weight defined.', 'wooping-shop-health'); ?>
                                 </label>
@@ -30,7 +30,7 @@
                             </li>
                             <li class="row">
                                 <label class="issue-description" for="ignoreHasEan"
-                                       title="<?php echo \esc_attr(esc_html__('Disable product EAN checks', 'wooping-shop-health')); ?>'">
+                                       title="<?php esc_attr_e('Disable product EAN checks', 'wooping-shop-health'); ?>">
                                     <strong><?php esc_html_e('EAN', 'wooping-shop-health'); ?></strong><br>
                                     <?php esc_html_e('Checks if the product has an EAN defined. Legally required if you\'re selling in the European Union.', 'wooping-shop-health'); ?>
                                 </label>
@@ -39,7 +39,7 @@
                             </li>
                             <li class="row">
                                 <label class="issue-description" for="ignoreHasGalleryImages"
-                                       title="<?php echo \esc_attr(esc_html__('Disable product gallery checks', 'wooping-shop-health')); ?>'">
+                                       title="<?php esc_attr_e('Disable product gallery checks', 'wooping-shop-health'); ?>">
                                     <strong><?php esc_html_e('Gallery Images', 'wooping-shop-health'); ?></strong><br>
                                     <?php esc_html_e('This validator checks if you\'ve uploaded images for a products\' gallery.', 'wooping-shop-health'); ?>
                                 </label>
@@ -48,7 +48,7 @@
                             </li>
                             <li class="row">
                                 <label class="issue-description" for="ignoreHasTags"
-                                       title="<?php echo \esc_attr(esc_html__('Disable product tags checks', 'wooping-shop-health')); ?>'">
+                                       title="<?php esc_attr_e('Disable product tags checks', 'wooping-shop-health'); ?>">
                                     <strong><?php esc_html_e('Tags', 'wooping-shop-health'); ?></strong><br>
                                     <?php esc_html_e('Checks whether or not your products have tags associated with them', 'wooping-shop-health'); ?>
                                 </label>
@@ -57,7 +57,7 @@
                             </li>
                             <li class="row">
                                 <label class="issue-description" for="ignoreHasOpenGraph"
-                                       title="<?php echo \esc_attr(esc_html__('Disable product open-graph checks', 'wooping-shop-health')); ?>'">
+                                       title="<?php esc_attr_e('Disable product open-graph checks', 'wooping-shop-health'); ?>">
                                     <strong><?php esc_html_e('Open Graph', 'wooping-shop-health'); ?></strong><br>
                                     <?php esc_html_e('This validator checks for open-graph information on the product page.', 'wooping-shop-health'); ?>
                                 </label>
@@ -66,7 +66,7 @@
                             </li>
 							<li class="row">
                                 <label class="issue-description" for="ignoreHasStock"
-                                       title="<?php echo \esc_attr(esc_html__('Disable product stock checks', 'wooping-shop-health')); ?>'">
+                                       title="<?php esc_attr_e('Disable product stock checks', 'wooping-shop-health'); ?>">
                                     <strong><?php esc_html_e('Product Stock', 'wooping-shop-health'); ?></strong><br>
                                     <?php esc_html_e('Checks whether or not your products has enough stock if stock keeping is enabled.', 'wooping-shop-health'); ?>
                                 </label>
